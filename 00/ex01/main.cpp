@@ -1,28 +1,27 @@
-#include <iostream>
-#include <string>
+#include "Contacts.hpp"
+#include "PhoneBook.hpp"
 
 int main(void){
-	bool		run;
+	PhoneBook	contact;
 	std::string	cmd;
 
-	run = true;
-	std::cout << "Enter command: ADD, SEARCH or EXIT" << std::endl;
-	std::cin >> cmd;
-	while (run){
-		if (cmd == "ADD"){
-			std::cout << cmd << std::endl;
+	std::cout << GREEN << "Enter command: ADD, SEARCH or EXIT" << DEFAULT << std::endl;
+	while (true){
+		std::cout << " >> ";
+		if (std::getline(std::cin, cmd) == 0) {
+			std::cout << "EXIT" << std::endl;
+			exit(0);
 		}
-		else if (cmd == "SEARCH"){
-			std::cout << cmd << std::endl;
-		}
-		else if (cmd == "EXIT"){
-			std::cout << cmd << std::endl;
-			run = false;
-		}
-		else{
+		if (cmd == "ADD")
+			contact.add();
+		else if (cmd == "SEARCH")
+			contact.search();
+		else if (cmd == "EXIT")
+			return (0);
+		else if (cmd == "\0")
+			continue;
+		else
 			std::cout << "Wrong command\n";
-			return (1);
-		}
 	}
 	return (0);
 }
