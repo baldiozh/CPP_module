@@ -3,16 +3,16 @@
 # CFLAGS = -Wall -Wextra -Werror -std=c++17
 
 
-NAME			= zombieHorde
+NAME			=
 
 INCLUDES		= -I$(HEADERS_DIR)
 
 HEADERS_DIR		= ./
-HEADERS_LIST	= Zombie.hpp
+HEADERS_LIST	= 
 HEADERS			= $(addprefix $(HEADERS_DIR), $(HEADERS_LIST))
 
 SRC_DIR			= ./
-SRC_LIST		= main.cpp Zombie.cpp zombieHorde.cpp
+SRC_LIST		= main.cpp
 SRC 			= $(addprefix $(SRC_DIR), $(SRC_LIST))
 
 
