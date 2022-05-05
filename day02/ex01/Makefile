@@ -1,18 +1,13 @@
-# CC = g++
-# RM = rm -f
-# CFLAGS = -Wall -Wextra -Werror -std=c++17
-
-
-NAME			= main
+NAME			= fixed1
 
 INCLUDES		= -I$(HEADERS_DIR)
 
 HEADERS_DIR		= ./
-HEADERS_LIST	=
+HEADERS_LIST	= Fixed.hpp
 HEADERS			= $(addprefix $(HEADERS_DIR), $(HEADERS_LIST))
 
 SRC_DIR			= ./
-SRC_LIST		= main.cpp
+SRC_LIST		= main.cpp Fixed.cpp
 SRC 			= $(addprefix $(SRC_DIR), $(SRC_LIST))
 
 

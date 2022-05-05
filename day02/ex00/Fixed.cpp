@@ -9,7 +9,7 @@ Fixed::~Fixed(){
 	std::cout << "Destructor called" << std::endl;
 }
 
-Fixed::Fixed(const Fixed& elem){
+Fixed::Fixed(const Fixed &elem){
 	std::cout << "Copy constructor called" << std::endl;
 	*this = elem;
 }
@@ -23,7 +23,7 @@ void Fixed::setRawBits(int const new_value){
 	this->value = new_value;
 }
 
-Fixed	&Fixed::operator=(const Fixed& elem){
+Fixed	&Fixed::operator=(const Fixed &elem){
 	std::cout << "Assignation operator called" << std::endl;
 	if (this == &elem)
 		return (*this);

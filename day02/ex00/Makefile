@@ -1,4 +1,4 @@
-NAME			= fixed
+NAME			= fixed0
 
 INCLUDES		= -I$(HEADERS_DIR)
 
