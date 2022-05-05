@@ -1,18 +1,13 @@
-# CC = g++
-# RM = rm -f
-# CFLAGS = -Wall -Wextra -Werror -std=c++17
-
-
-NAME			=
+NAME			= Harl
 
 INCLUDES		= -I$(HEADERS_DIR)
 
 HEADERS_DIR		= ./
-HEADERS_LIST	= 
+HEADERS_LIST	= Harl.hpp
 HEADERS			= $(addprefix $(HEADERS_DIR), $(HEADERS_LIST))
 
 SRC_DIR			= ./
-SRC_LIST		= main.cpp
+SRC_LIST		= main.cpp Harl.cpp
 SRC 			= $(addprefix $(SRC_DIR), $(SRC_LIST))
 
 

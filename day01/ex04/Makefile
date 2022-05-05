@@ -1,14 +1,9 @@
-# CC = g++
-# RM = rm -f
-# CFLAGS = -Wall -Wextra -Werror -std=c++17
-
-
-NAME			=
+NAME			= replace
 
 INCLUDES		= -I$(HEADERS_DIR)
 
 HEADERS_DIR		= ./
-HEADERS_LIST	= 
+HEADERS_LIST	=
 HEADERS			= $(addprefix $(HEADERS_DIR), $(HEADERS_LIST))
 
 SRC_DIR			= ./

@@ -3,16 +3,16 @@
 # CFLAGS = -Wall -Wextra -Werror -std=c++17
 
 
-NAME			=
+NAME			= violence
 
 INCLUDES		= -I$(HEADERS_DIR)
 
 HEADERS_DIR		= ./
-HEADERS_LIST	= 
+HEADERS_LIST	= Weapon.hpp HumanA.hpp HumanB.hpp
 HEADERS			= $(addprefix $(HEADERS_DIR), $(HEADERS_LIST))
 
 SRC_DIR			= ./
-SRC_LIST		= main.cpp
+SRC_LIST		= main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
 SRC 			= $(addprefix $(SRC_DIR), $(SRC_LIST))
 
 
